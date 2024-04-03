@@ -1,4 +1,3 @@
-#retrieve 6 numbers from 1 - 60
 import datetime, time
 
 alllist = []
