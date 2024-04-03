@@ -19,12 +19,11 @@ def timestamp():
     return  int(datetime.datetime.now().strftime("%f"))
 
 x = 0
-while x < 6 and len(lucklist) < 6:          
+while len(lucklist) < 6:          
     time.sleep(.01)
     number = sortnumber(timestamp())
     if number not in lucklist :
-        lucklist.append(number)      
-    x += 1
+        lucklist.append(number)
 
 print("These are your 6 lucky numbers")
 sorted_numbers = sorted(lucklist)
