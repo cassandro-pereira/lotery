@@ -18,7 +18,6 @@ def sortnumber(time):
 def timestamp():
     return  int(datetime.datetime.now().strftime("%f"))
 
-x = 0
 while len(lucklist) < 6:          
     time.sleep(.01)
     number = sortnumber(timestamp())
