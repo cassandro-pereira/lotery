@@ -18,21 +18,12 @@ def sortnumber(time):
 def timestamp():
     return  int(datetime.datetime.now().strftime("%f"))
 
-def unique_list(numbers):
-    return ((len(numbers)) == len(numbers))
-    
 x = 0
-while x < 6:          
-#    print(timestamp)
+while x < 6 and len(lucklist) < 6:          
     time.sleep(.01)
     number = sortnumber(timestamp())
-    if unique_list(lucklist):
-        lucklist.append(number)         
-    else:
-        lucklist.pop(x)
-        time.sleep(.1)
-        number = sortnumber(timestamp())
-        lucklist.append(number)
+    if number not in lucklist :
+        lucklist.append(number)      
     x += 1
 
 print("These are your 6 lucky numbers")
