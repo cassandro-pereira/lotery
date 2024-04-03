@@ -8,4 +8,4 @@ All numbers
 
 These are your 6 lucky numbers
 
-[6, 12, 58, 7, 16, 59, 34]
+[2, 11, 12, 31, 40, 41]
