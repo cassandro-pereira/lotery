@@ -11,8 +11,12 @@ while x <= 60 :
 print("All numbers")
 print(alllist)
 
-def sortnumber(time):             
-    return time%60             
+def sortnumber(time: int):             
+    lucky_number = time%60
+    if lucky_number != 0:
+        return lucky_number
+    else:
+        return 60            
 
 def timestamp():
     return  int(datetime.datetime.now().strftime("%f"))
